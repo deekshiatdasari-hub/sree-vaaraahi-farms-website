@@ -1,0 +1,345 @@
+SREE VAARAAHI FARMS: WEBSITE PAGES FOR WORDPRESS
+Effective date: 18 November 2026
+
+HOW TO ADD EACH PAGE
+1. WordPress admin -> Pages -> Add New Page.
+2. Type the TITLE below into the title field.
+3. Copy everything between the START and END lines and paste it into the page body.
+   The block editor turns ### headings, - bullets, **bold**, links and | tables | into proper blocks.
+4. In the page settings (right panel), set the URL slug to the SLUG below. Then Publish.
+5. Link all pages from the website footer.
+
+========================================================================
+TITLE: Terms & Conditions
+SLUG:  terms-and-conditions   ->  https://www.sreevaaraahifarms.in/terms-and-conditions/
+========================================================================
+----- START (copy from the next line) -----
+*Effective from 18 November 2026*
+
+These terms apply whenever you browse or order from Sree Vaaraahi Farms, on our website (www.sreevaaraahifarms.in) or our mobile app. By placing an order, you agree to them.
+
+### 1. Who we are
+
+Sree Vaaraahi Farms ("we", "us") is the trading name of Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064). Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
+
+### 2. Who can order
+
+- You must be at least 18 years old.
+- Your name, phone number and delivery address must be accurate.
+- You are responsible for activity on your account. Keep your password private.
+
+### 3. Our products
+
+- Fresh produce varies in size, colour and shape. Weights can differ by up to 10% from the pack size shown.
+- Product photos are for illustration. What you receive may look slightly different.
+- Many items are seasonal and in limited supply. We may limit the quantity per order.
+- Articles on our website about health and nutrition are general information, not medical advice. Please consult a doctor about any medical condition or allergy.
+
+### 4. Prices and payment
+
+- All prices are in Indian Rupees (₹) and include any applicable taxes. The price shown when you place an order is the price you pay.
+- Orders are paid online in advance through our payment partner, Cashfree Payments (UPI, debit and credit cards, net banking and wallets). We do not offer Cash on Delivery.
+- We never see or store your card or bank details. Cashfree handles them securely.
+- **Delivery charge:** delivery is free for orders of ₹1,000 or more. For smaller orders, you pay the Rapido delivery charge directly to the rider when your order arrives. That charge is not collected by us.
+
+### 5. Orders
+
+- Your order is confirmed only after your payment succeeds. You will see the confirmation in the app or on the website.
+- We may cancel an order, in full or in part, if an item becomes unavailable, the address is outside our delivery area, a price was shown incorrectly, or we suspect fraud. You then get a full refund for the cancelled items.
+
+### 6. Delivery, cancellations and refunds
+
+These are covered in our [Shipping & Delivery Policy](https://www.sreevaaraahifarms.in/shipping-policy/) and our [Cancellation & Refund Policy](https://www.sreevaaraahifarms.in/refund-policy/).
+
+### 7. Fair use
+
+Please don't misuse the website or app, copy our content or photos, place fake orders, or attempt to interfere with our systems. If you'd like to buy for resale, contact us first. We may suspend accounts that break these terms.
+
+### 8. Our content
+
+The Sree Vaaraahi Farms name, logo, text and photos belong to us or are used with permission. Please don't reuse them without our written consent.
+
+### 9. Liability
+
+As far as the law allows, our total liability for any order is limited to the amount you paid for it. Nothing in these terms limits your rights under the Consumer Protection Act, 2019.
+
+### 10. Privacy
+
+How we handle your personal information is explained in our [Privacy Policy](https://www.sreevaaraahifarms.in/privacy-policy/).
+
+### 11. Changes to these terms
+
+We may update these terms from time to time. The date at the top shows the latest version. Orders already placed follow the terms that applied when they were placed.
+
+### 12. Governing law
+
+These terms are governed by the laws of India. Any dispute is subject to the courts at Hyderabad, Telangana.
+
+### 13. Grievances and contact
+
+If you have a complaint, please contact our Grievance Officer:
+
+- **Name:** Bhavani
+- **Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+
+We acknowledge complaints within 48 hours and aim to resolve them within one month.
+----- END -----
+
+========================================================================
+TITLE: Privacy Policy
+SLUG:  privacy-policy   ->  https://www.sreevaaraahifarms.in/privacy-policy/
+========================================================================
+----- START (copy from the next line) -----
+*Effective from 18 November 2026*
+
+This policy explains what personal information Sree Vaaraahi Farms collects through our website (www.sreevaaraahifarms.in) and our mobile app, why we collect it, and your choices. We collect only what we need to deliver your orders, and we never sell your data.
+
+### 1. Who is responsible for your data
+
+Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), trading as Sree Vaaraahi Farms, 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in.
+
+### 2. What we collect
+
+| Information | Why we need it |
+| --- | --- |
+| Name and mobile number | To contact you about your order; the delivery rider calls this number |
+| Email address | To create your account, log you in with Google or your email and password, and send order updates and password-reset emails |
+| Delivery addresses and pincode | To check we deliver to you and to deliver your order |
+| Order details: items, amounts, delivery day, notes | To fulfil your order, provide order history and "Buy again", and keep the records the law requires |
+| Payment status and transaction ID | To confirm your payment and process refunds. We never see your card, UPI PIN or bank login. |
+| Messages you send us (WhatsApp, Telegram, email, phone) | To answer questions and resolve complaints |
+
+The app does **not** access your contacts, photos, camera or precise location. It contains no advertising and does not track you across other apps or websites.
+
+### 3. Who we share it with
+
+We share information only with the service providers needed to run the business, and only as much as each one needs:
+
+- **Cashfree Payments**: processes your payment.
+- **Google Firebase**: Google sign-in and email login.
+- **Our website and store host (GoDaddy) and the WooCommerce software**: store your account and order records.
+- **Delivery riders (for example, Rapido)**: receive your name, phone number and address to deliver the order.
+- **Government authorities**: only when the law requires it.
+
+Some of these providers may store data on servers outside India, under their own security and privacy commitments.
+
+### 4. Cookies
+
+Our website uses essential cookies to keep your cart and login working. We do not use advertising or tracking cookies.
+
+### 5. How long we keep it
+
+- **Account details and saved addresses:** kept until you delete your account.
+- **Order and payment records:** kept for as long as tax and accounting laws require (generally up to 8 years), even after account deletion.
+
+### 6. Your rights
+
+Under the Digital Personal Data Protection Act, 2023 and other applicable law, you can ask us to:
+
+- show you the personal data we hold about you
+- correct or update it
+- delete your account and data (see [Account Deletion](https://www.sreevaaraahifarms.in/delete-account/))
+- stop sending you promotional messages
+
+We never send promotional messages without your consent. To make a request, contact the Grievance Officer below. We respond within 30 days.
+
+### 7. Security
+
+All connections to our website, app and payment partner are encrypted (HTTPS). Logins are handled by Google Firebase, and access to customer data is limited to the people who need it to fulfil orders.
+
+### 8. Children
+
+Our services are meant for adults aged 18 and over. We do not knowingly collect data from children.
+
+### 9. Changes to this policy
+
+If we change how we use your data, we will update this page and the date at the top. For significant changes we will also tell you in the app.
+
+### 10. Grievance Officer
+
+- **Name:** Bhavani
+- **Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+----- END -----
+
+========================================================================
+TITLE: Cancellation & Refund Policy
+SLUG:  refund-policy   ->  https://www.sreevaaraahifarms.in/refund-policy/
+========================================================================
+----- START (copy from the next line) -----
+*Effective from 18 November 2026*
+
+Our produce is harvested and packed for each delivery day, so we can't take back fresh items once they're delivered. If something arrives damaged, spoiled, missing or wrong, we will refund or replace it.
+
+### At a glance
+
+| Situation | What happens |
+| --- | --- |
+| You cancel before 8 PM the day before your delivery day | Full refund |
+| You cancel after 8 PM the day before your delivery day | Not possible: the order is already being packed |
+| We cancel your order, or an item turns out to be unavailable | Full refund for the cancelled items |
+| An item is damaged, spoiled, missing or wrong, and you tell us within 4 hours of delivery | Refund for that item, or a replacement in your next delivery |
+| Payment was deducted but the order was not confirmed | Automatic full refund |
+| You changed your mind after delivery | No refund (perishable goods) |
+| Delivery failed because nobody was reachable or the address was wrong | No refund (perishable goods) |
+
+### How to cancel an order
+
+Message or call us on WhatsApp at +91 76718 25610 with your order number before 8 PM the day before your delivery day. Example: for a Wednesday delivery, cancel by 8 PM on Tuesday.
+
+### How to report a problem with your order
+
+1. Within **4 hours of delivery**, send us on WhatsApp at +91 76718 25610: your order number, a photo of the item, and a short description.
+2. We reply the same day and offer a refund for that item or a replacement in your next delivery, whichever you prefer.
+
+Small variations in size, colour, shape or weight (up to 10%) are natural for farm produce and are not counted as damage.
+
+### When you get your money back
+
+- **Approved refunds** go back to your original payment method (UPI, card, net banking or wallet) within **7 working days**. Your bank may take 2–3 more days to show it.
+- **Automatic refunds** for failed or unconfirmed orders usually arrive within 5–7 working days.
+- **Rapido delivery charge:** for orders under ₹1,000 you pay this directly to the rider, so we can't refund it. If a delivery fails because of a mistake on our side, we cover the cost of delivering again.
+
+### Contact
+
+WhatsApp or call +91 76718 25610, or email hello@sreevaaraahifarms.in. Unresolved complaints can be taken to our Grievance Officer, listed in our [Terms & Conditions](https://www.sreevaaraahifarms.in/terms-and-conditions/).
+----- END -----
+
+========================================================================
+TITLE: Shipping & Delivery Policy
+SLUG:  shipping-policy   ->  https://www.sreevaaraahifarms.in/shipping-policy/
+========================================================================
+----- START (copy from the next line) -----
+*Effective from 18 November 2026*
+
+We deliver across Hyderabad every **Wednesday and Saturday**. Delivery is free on orders of ₹1,000 or more.
+
+### Where we deliver
+
+We deliver to Hyderabad, Secunderabad and Cyberabad (pincodes starting with 500), plus nearby areas including Patancheru. The app checks your pincode before you pay, so you're never charged for an address we can't reach. On the website, please check with us first if you're unsure.
+
+### Delivery days
+
+| You order on | You can choose |
+| --- | --- |
+| Sunday, Monday or Tuesday | Wednesday or Saturday |
+| Wednesday | Saturday |
+| Thursday or Friday | Saturday or the following Wednesday |
+| Saturday | The following Wednesday |
+
+There's no cutoff time. Orders placed on a delivery day go to the next delivery day.
+
+### Delivery charges
+
+| Order value | Delivery charge |
+| --- | --- |
+| ₹1,000 or more | Free |
+| Under ₹1,000 | The Rapido delivery fare, paid by you directly to the rider in cash or UPI when the order arrives |
+
+The Rapido fare depends on the distance to your address. It is not included in the amount you pay online.
+
+### Receiving your order
+
+- The rider will call you before arriving. Please keep your phone reachable and make sure someone is available at the address.
+- Check your items when they arrive. Report any damaged, spoiled, missing or wrong items within 4 hours of delivery (see our [Cancellation & Refund Policy](https://www.sreevaaraahifarms.in/refund-policy/)).
+- Fresh produce can't be held or sent again. If the rider can't reach you, or the address is wrong, the order can't be refunded.
+
+### Tracking and delays
+
+- **Tracking:** the app shows each order's status (Confirmed, then Delivered). Our team can update you on WhatsApp at +91 76718 25610.
+- **Delays:** if heavy rain, strikes or other events outside our control delay a delivery, we'll tell you as early as we can and deliver on the next possible day, or refund you if you prefer.
+----- END -----
+
+========================================================================
+TITLE: Contact Us
+SLUG:  contact-us   ->  https://www.sreevaaraahifarms.in/contact-us/
+========================================================================
+----- START (copy from the next line) -----
+We're happy to help with orders, deliveries and anything else.
+
+- **WhatsApp / Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+- **Hours:** 9 AM – 6 PM
+- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+
+**Order help:** please include your order number. To cancel an order, contact us before 8 PM the day before your delivery day. To report a problem, contact us within 4 hours of delivery.
+
+### Business details
+
+- **Business name:** Sree Vaaraahi Farms
+- **Legal entity:** Sree Vaaraahi Farms LLP, a limited liability partnership (LLPIN: ACJ-9064)
+
+### Grievance Officer
+
+If your issue isn't resolved, please contact our Grievance Officer. We acknowledge complaints within 48 hours and aim to resolve them within one month.
+
+- **Name:** Bhavani
+- **Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+
+### Our policies
+
+[Terms & Conditions](https://www.sreevaaraahifarms.in/terms-and-conditions/) · [Privacy Policy](https://www.sreevaaraahifarms.in/privacy-policy/) · [Cancellation & Refund Policy](https://www.sreevaaraahifarms.in/refund-policy/) · [Shipping & Delivery Policy](https://www.sreevaaraahifarms.in/shipping-policy/) · [Account Deletion](https://www.sreevaaraahifarms.in/delete-account/)
+----- END -----
+
+========================================================================
+TITLE: Delete Your Account
+SLUG:  delete-account   ->  https://www.sreevaaraahifarms.in/delete-account/
+========================================================================
+----- START (copy from the next line) -----
+This page applies to the **Sree Vaaraahi Farms** app and our website, operated by Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064).
+
+**In the app:** open **Account → Delete account** and confirm. Your account is deleted immediately.
+
+**Without the app:** email hello@sreevaaraahifarms.in or WhatsApp +91 76718 25610 from your registered mobile number, with the subject "Delete my account". We confirm within 7 days.
+
+### What we delete
+
+- Your name, mobile number and email address
+- Your saved delivery addresses
+- Your login (Google sign-in, or email and password)
+
+### What we keep, and for how long
+
+- **Order and payment records** (items, amounts, dates, transaction IDs): kept for as long as tax and accounting laws require (generally up to 8 years), then deleted.
+- **Orders that are on their way:** still delivered. Cancellation and refund rules apply as usual.
+
+Questions? Contact us at hello@sreevaaraahifarms.in.
+----- END -----
+
+========================================================================
+TITLE: About Us (optional: only if the site doesn't already have one)
+SLUG:  about-us   ->  https://www.sreevaaraahifarms.in/about-us/
+========================================================================
+----- START (copy from the next line) -----
+Sree Vaaraahi Farms brings naturally grown produce from the forest regions of Andhra Pradesh to homes across Hyderabad.
+
+### Where our produce comes from
+
+Our fruits, vegetables, leafy greens and forest specials come from farms in **Araku**, **Chintapalli** and **Paderu**, in the hills of the Eastern Ghats, and from partner farms. They're grown without chemical fertilisers and pesticides, hand-picked, and brought straight to your door.
+
+We also offer cold-pressed oils, dairy products and everyday groceries.
+
+### Our mission
+
+We started with a simple goal: to make pure, chemical-free food available to 5,000 families in Hyderabad, especially people recovering from illness who need it most.
+
+### Who we are
+
+Sree Vaaraahi Farms was founded by Smt. Anitha Yerra, with co-founders Prakash Sunkara and Santosh CH, and Krishnam Raju overseeing administration and procurement. Meet the team on our [Our Team](https://www.sreevaaraahifarms.in/our-team/) page.
+
+### How it works
+
+- Order on our website or the Sree Vaaraahi Farms app, and pay online.
+- We deliver every **Wednesday and Saturday** across Hyderabad.
+- Delivery is free on orders of ₹1,000 or more.
+
+### Contact us
+
+- **WhatsApp / Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+----- END -----

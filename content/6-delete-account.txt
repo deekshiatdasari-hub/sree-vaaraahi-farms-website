@@ -1,0 +1,18 @@
+This page applies to the **Sree Vaaraahi Farms** app and our website, operated by Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064).
+
+**In the app:** open **Account → Delete account** and confirm. Your account is deleted immediately.
+
+**Without the app:** email hello@sreevaaraahifarms.in or WhatsApp +91 76718 25610 from your registered mobile number, with the subject "Delete my account". We confirm within 7 days.
+
+### What we delete
+
+- Your name, mobile number and email address
+- Your saved delivery addresses
+- Your login (Google sign-in, or email and password)
+
+### What we keep, and for how long
+
+- **Order and payment records** (items, amounts, dates, transaction IDs): kept for as long as tax and accounting laws require (generally up to 8 years), then deleted.
+- **Orders that are on their way:** still delivered. Cancellation and refund rules apply as usual.
+
+Questions? Contact us at hello@sreevaaraahifarms.in.

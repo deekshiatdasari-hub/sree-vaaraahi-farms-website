@@ -1,0 +1,71 @@
+*Effective from 18 November 2026*
+
+This policy explains what personal information Sree Vaaraahi Farms collects through our website (www.sreevaaraahifarms.in) and our mobile app, why we collect it, and your choices. We collect only what we need to deliver your orders, and we never sell your data.
+
+### 1. Who is responsible for your data
+
+Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), trading as Sree Vaaraahi Farms, 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in.
+
+### 2. What we collect
+
+| Information | Why we need it |
+| --- | --- |
+| Name and mobile number | To contact you about your order; the delivery rider calls this number |
+| Email address | To create your account, log you in with Google or your email and password, and send order updates and password-reset emails |
+| Delivery addresses and pincode | To check we deliver to you and to deliver your order |
+| Order details: items, amounts, delivery day, notes | To fulfil your order, provide order history and "Buy again", and keep the records the law requires |
+| Payment status and transaction ID | To confirm your payment and process refunds. We never see your card, UPI PIN or bank login. |
+| Messages you send us (WhatsApp, Telegram, email, phone) | To answer questions and resolve complaints |
+
+The app does **not** access your contacts, photos, camera or precise location. It contains no advertising and does not track you across other apps or websites.
+
+### 3. Who we share it with
+
+We share information only with the service providers needed to run the business, and only as much as each one needs:
+
+- **Cashfree Payments**: processes your payment.
+- **Google Firebase**: Google sign-in and email login.
+- **Our website and store host (GoDaddy) and the WooCommerce software**: store your account and order records.
+- **Delivery riders (for example, Rapido)**: receive your name, phone number and address to deliver the order.
+- **Government authorities**: only when the law requires it.
+
+Some of these providers may store data on servers outside India, under their own security and privacy commitments.
+
+### 4. Cookies
+
+Our website uses essential cookies to keep your cart and login working. We do not use advertising or tracking cookies.
+
+### 5. How long we keep it
+
+- **Account details and saved addresses:** kept until you delete your account.
+- **Order and payment records:** kept for as long as tax and accounting laws require (generally up to 8 years), even after account deletion.
+
+### 6. Your rights
+
+Under the Digital Personal Data Protection Act, 2023 and other applicable law, you can ask us to:
+
+- show you the personal data we hold about you
+- correct or update it
+- delete your account and data (see [Account Deletion](https://www.sreevaaraahifarms.in/delete-account/))
+- stop sending you promotional messages
+
+We never send promotional messages without your consent. To make a request, contact the Grievance Officer below. We respond within 30 days.
+
+### 7. Security
+
+All connections to our website, app and payment partner are encrypted (HTTPS). Logins are handled by Google Firebase, and access to customer data is limited to the people who need it to fulfil orders.
+
+### 8. Children
+
+Our services are meant for adults aged 18 and over. We do not knowingly collect data from children.
+
+### 9. Changes to this policy
+
+If we change how we use your data, we will update this page and the date at the top. For significant changes we will also tell you in the app.
+
+### 10. Grievance Officer
+
+- **Name:** Bhavani
+- **Phone:** +91 76718 25610
+- **Email:** hello@sreevaaraahifarms.in
+- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
