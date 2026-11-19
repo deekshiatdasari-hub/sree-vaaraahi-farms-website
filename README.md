@@ -36,20 +36,45 @@ Then open http://localhost:5500. The site uses the staging shop server, which ac
 
 ## Ordering today
 
-`CHECKOUT_MODE = 'whatsapp'` in `site/assets/js/config.js`. The cart becomes a pre-filled WhatsApp message to +91 76718 25610 with the delivery day and pincode. Once Cashfree is approved, the plan is a `/checkout/` page with Firebase login and Cashfree payment, then switching to `'online'` (and removing the `/checkout/*` redirect).
+`CHECKOUT_MODE = 'whatsapp'` in `site/assets/js/config.js`. The cart becomes a pre-filled WhatsApp message to +91 76718 25610 with the delivery day and pincode. The app already pays online through this site's payment page, `/pay/` (Razorpay Checkout). Online checkout on the website itself is the next step, and needs login on the website.
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Pages, from GitHub)
 
-```
-npm run deploy
-```
+Every push to `main` publishes the site. One-time setup in the Cloudflare dashboard:
+**Workers & Pages → Create → Pages → Connect to Git → `sree-vaaraahi-farms-website`**
 
-The first deploy creates the project and a `*.pages.dev` address. Add that address to `ALLOWED_ORIGINS` on the shop server before testing there.
+| Setting | Value |
+| --- | --- |
+| Project name | `sree-vaaraahi-farms` (address `sree-vaaraahi-farms.pages.dev`) |
+| Framework preset | None |
+| Build command | *(leave empty)* |
+| Build output directory | `site` |
+
+Each address the site runs on must be listed in `API_BY_HOST` (`site/assets/js/config.js`) and in `ALLOWED_ORIGINS` on that server (the app project's `server/wrangler.toml`). Otherwise the browser blocks the product list.
 
 ## Go-live checklist
 
-1. Move WordPress to a back-office address, for example `admin.sreevaaraahifarms.in`: create the subdomain at GoDaddy and update **Settings → General** (WordPress and Site Address). Then reconnect the WooCommerce phone app and change `WC_URL` on the shop server.
-2. Deploy the production shop server with Cashfree (in the app project: `cd server && npx wrangler deploy`), with `ALLOWED_ORIGINS` set to the live website address. Then point `API_BY_HOST` in `site/assets/js/config.js` at it.
-3. In Cloudflare Pages → Custom domains, add `www.sreevaaraahifarms.in` and `sreevaaraahifarms.in`, and update DNS as Cloudflare instructs.
-4. Check the old addresses redirect, for example `/refund_returns/` and `/wild-honey/`.
-5. Submit `https://www.sreevaaraahifarms.in/sitemap.xml` in Google Search Console.
+The domain's DNS is at **BigRock**. WordPress and email run on the hosting server (108.167.146.99). Do the steps in this order, so the shop never goes offline.
+
+**1. Put the new site online (nothing changes for customers yet)**
+1. Deploy the live shop server from the app project: `cd server && npx wrangler deploy`. It runs `PAYMENTS_MODE = "off"` (catalog only) until Razorpay is live.
+2. Connect this repo to Cloudflare Pages (above), then check `https://sree-vaaraahi-farms.pages.dev`.
+
+**2. Move WordPress to a back-office address**
+1. BigRock DNS: add an **A** record `admin` → `108.167.146.99`.
+2. Hosting control panel: add `admin.sreevaaraahifarms.in` pointing to the same folder as the current site, with SSL.
+3. Take a full backup of the WordPress site.
+4. WordPress → **Settings → General**: set both addresses to `https://admin.sreevaaraahifarms.in`.
+5. WordPress → **Settings → Reading**: tick "Discourage search engines". WooCommerce → **Settings → Payments**: turn off Cash on Delivery, so nobody orders on the old storefront.
+6. Change `WC_URL` to `https://admin.sreevaaraahifarms.in` on both servers and redeploy. Reconnect the WooCommerce phone app with the new address.
+
+**3. Switch the domain**
+1. Cloudflare Pages → **Custom domains** → add `www.sreevaaraahifarms.in`.
+2. BigRock DNS: change `www` to a **CNAME** → `sree-vaaraahi-farms.pages.dev`. Leave the `mail`, MX and TXT records alone: email runs on the hosting server.
+3. Hosting control panel → **Redirects**: `sreevaaraahifarms.in` → `https://www.sreevaaraahifarms.in` (permanent). The bare domain stays on the hosting server while DNS is at BigRock.
+4. Once the certificate is active, check the home page, shop, cart, policies, and old links (`/refund_returns/`, `/wild-honey/`).
+
+**4. After launch**
+1. Google Search Console: add the domain and submit `https://www.sreevaaraahifarms.in/sitemap.xml`.
+2. Play Console: privacy policy `…/privacy-policy/`, account deletion `…/delete-account/`.
+3. Finish Razorpay activation. Then switch the live server to `PAYMENTS_MODE = "razorpay"` with the live keys (see the app project's `docs/GO_LIVE.md`).

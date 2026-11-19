@@ -4,7 +4,7 @@ These terms apply whenever you browse or order from Sree Vaaraahi Farms, on our 
 
 ### 1. Who we are
 
-Sree Vaaraahi Farms ("we", "us") is the trading name of Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064). Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
+Sree Vaaraahi Farms ("we", "us") is a store run by Bhavani, who sells and delivers every order placed on our website and app. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064), which also publishes our app. Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
 
 ### 2. Who can order
 
@@ -22,8 +22,8 @@ Sree Vaaraahi Farms ("we", "us") is the trading name of Sree Vaaraahi Farms LLP,
 ### 4. Prices and payment
 
 - All prices are in Indian Rupees (₹) and include any applicable taxes. The price shown when you place an order is the price you pay.
-- Orders are paid online in advance through our payment partner, Cashfree Payments (UPI, debit and credit cards, net banking and wallets). We do not offer Cash on Delivery.
-- We never see or store your card or bank details. Cashfree handles them securely.
+- Orders are paid online in advance through our payment partner, Razorpay (UPI, debit and credit cards, net banking and wallets). We do not offer Cash on Delivery.
+- We never see or store your card or bank details. Razorpay handles them securely.
 - **Delivery charge:** delivery is free for orders of ₹1,000 or more. For smaller orders, you pay the Rapido delivery charge directly to the rider when your order arrives. That charge is not collected by us.
 
 ### 5. Orders

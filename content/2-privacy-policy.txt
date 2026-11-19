@@ -4,7 +4,7 @@ This policy explains what personal information Sree Vaaraahi Farms collects thro
 
 ### 1. Who is responsible for your data
 
-Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), trading as Sree Vaaraahi Farms, 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in.
+Bhavani, who runs the Sree Vaaraahi Farms store, is responsible for the personal information collected for your orders. Address: 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), which publishes the Sree Vaaraahi Farms app.
 
 ### 2. What we collect
 
@@ -23,7 +23,7 @@ The app does **not** access your contacts, photos, camera or precise location. I
 
 We share information only with the service providers needed to run the business, and only as much as each one needs:
 
-- **Cashfree Payments**: processes your payment.
+- **Razorpay**: processes your payment.
 - **Google Firebase**: Google sign-in and email login.
 - **Our website and store host (GoDaddy) and the WooCommerce software**: store your account and order records.
 - **Delivery riders (for example, Rapido)**: receive your name, phone number and address to deliver the order.

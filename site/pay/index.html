@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- partial:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e2f24">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="og:site_name" content="Sree Vaaraahi Farms">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.sreevaaraahifarms.in/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="module" src="/assets/js/ui.js"></script>
+<!-- /partial:head -->
+<title>Pay for your order · Sree Vaaraahi Farms</title>
+<meta name="description" content="Secure payment for your Sree Vaaraahi Farms order.">
+<meta name="robots" content="noindex">
+<script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+<script type="module" src="/assets/js/pages/pay.js"></script>
+</head>
+<body data-no-cart-bar>
+<main id="main" class="pay-page">
+  <div class="pay-card card" aria-live="polite">
+    <div class="pay-brand">
+      <img src="/assets/img/logo-96.webp" alt="" width="56" height="56">
+      <strong>Sree Vaaraahi Farms</strong>
+    </div>
+    <div id="pay-state">
+      <div class="skeleton" style="height:22px;width:60%;margin:0 auto 14px"></div>
+      <div class="skeleton" style="height:52px"></div>
+    </div>
+    <p class="pay-secure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      Payments are processed securely by Razorpay
+    </p>
+  </div>
+</main>
+</body>
+</html>

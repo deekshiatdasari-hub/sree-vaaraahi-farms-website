@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /cart/
+Disallow: /pay/
 
 Sitemap: https://www.sreevaaraahifarms.in/sitemap.xml

@@ -20,7 +20,7 @@ These terms apply whenever you browse or order from Sree Vaaraahi Farms, on our 
 
 ### 1. Who we are
 
-Sree Vaaraahi Farms ("we", "us") is the trading name of Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064). Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
+Sree Vaaraahi Farms ("we", "us") is a store run by Bhavani, who sells and delivers every order placed on our website and app. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064), which also publishes our app. Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
 
 ### 2. Who can order
 
@@ -38,8 +38,8 @@ Sree Vaaraahi Farms ("we", "us") is the trading name of Sree Vaaraahi Farms LLP,
 ### 4. Prices and payment
 
 - All prices are in Indian Rupees (₹) and include any applicable taxes. The price shown when you place an order is the price you pay.
-- Orders are paid online in advance through our payment partner, Cashfree Payments (UPI, debit and credit cards, net banking and wallets). We do not offer Cash on Delivery.
-- We never see or store your card or bank details. Cashfree handles them securely.
+- Orders are paid online in advance through our payment partner, Razorpay (UPI, debit and credit cards, net banking and wallets). We do not offer Cash on Delivery.
+- We never see or store your card or bank details. Razorpay handles them securely.
 - **Delivery charge:** delivery is free for orders of ₹1,000 or more. For smaller orders, you pay the Rapido delivery charge directly to the rider when your order arrives. That charge is not collected by us.
 
 ### 5. Orders
@@ -98,7 +98,7 @@ This policy explains what personal information Sree Vaaraahi Farms collects thro
 
 ### 1. Who is responsible for your data
 
-Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), trading as Sree Vaaraahi Farms, 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in.
+Bhavani, who runs the Sree Vaaraahi Farms store, is responsible for the personal information collected for your orders. Address: 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), which publishes the Sree Vaaraahi Farms app.
 
 ### 2. What we collect
 
@@ -117,7 +117,7 @@ The app does **not** access your contacts, photos, camera or precise location. I
 
 We share information only with the service providers needed to run the business, and only as much as each one needs:
 
-- **Cashfree Payments**: processes your payment.
+- **Razorpay**: processes your payment.
 - **Google Firebase**: Google sign-in and email login.
 - **Our website and store host (GoDaddy) and the WooCommerce software**: store your account and order records.
 - **Delivery riders (for example, Rapido)**: receive your name, phone number and address to deliver the order.
@@ -270,7 +270,8 @@ We're happy to help with orders, deliveries and anything else.
 ### Business details
 
 - **Business name:** Sree Vaaraahi Farms
-- **Legal entity:** Sree Vaaraahi Farms LLP, a limited liability partnership (LLPIN: ACJ-9064)
+- **Store run by:** Bhavani
+- **Brand owner and app publisher:** Sree Vaaraahi Farms LLP, a limited liability partnership (LLPIN: ACJ-9064)
 
 ### Grievance Officer
 
@@ -290,7 +291,7 @@ TITLE: Delete Your Account
 SLUG:  delete-account   ->  https://www.sreevaaraahifarms.in/delete-account/
 ========================================================================
 ----- START (copy from the next line) -----
-This page applies to the **Sree Vaaraahi Farms** app and our website, operated by Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064).
+This page applies to the **Sree Vaaraahi Farms** app, published by Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), and to our website. The Sree Vaaraahi Farms store is run by Bhavani.
 
 **In the app:** open **Account → Delete account** and confirm. Your account is deleted immediately.
 
@@ -329,7 +330,7 @@ We started with a simple goal: to make pure, chemical-free food available to 5,0
 
 ### Who we are
 
-Sree Vaaraahi Farms was founded by Smt. Anitha Yerra, with co-founders Prakash Sunkara and Santosh CH, and Krishnam Raju overseeing administration and procurement. Meet the team on our [Our Team](https://www.sreevaaraahifarms.in/our-team/) page.
+Sree Vaaraahi Farms was founded by Prakash Sunkara. Read his story on our [About us](https://www.sreevaaraahifarms.in/our-team/) page.
 
 ### How it works
 

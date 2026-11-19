@@ -93,5 +93,5 @@ console.log(`sitemap.xml: ${urls.length} pages`);
 
 /* ---------- robots.txt ---------- */
 
-writeFileSync(join(site, 'robots.txt'), `User-agent: *\nDisallow: /cart/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+writeFileSync(join(site, 'robots.txt'), `User-agent: *\nDisallow: /cart/\nDisallow: /pay/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log('robots.txt written');

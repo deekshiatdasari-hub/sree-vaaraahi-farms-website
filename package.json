@@ -6,7 +6,6 @@
     "preview": "python -m http.server 5500 --directory site",
     "sync": "node tools/sync-partials.mjs",
     "policies": "node tools/build-policies.mjs && node tools/sync-partials.mjs",
-    "site-files": "node tools/build-site-files.mjs",
-    "deploy": "npx wrangler pages deploy site --project-name sree-vaaraahi-farms"
+    "site-files": "node tools/build-site-files.mjs"
   }
 }
