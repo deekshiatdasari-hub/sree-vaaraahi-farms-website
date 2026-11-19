@@ -5,6 +5,7 @@
  * to the app. The server checks every payment with Razorpay; this page never decides on its own.
  */
 
+import { cart } from '../cart.js';
 import { API_URL, Business, STAGING_API } from '../config.js';
 import { esc, formatPrice } from '../lib.js';
 
@@ -20,7 +21,12 @@ const stateEl = document.getElementById('pay-state');
 let details = null;
 
 function backLink(status) {
-  if (!returnUrl) return '<a class="btn btn-outline btn-lg btn-block" href="/shop/">Continue shopping</a>';
+  // Website checkout (no app to return to).
+  if (!returnUrl) {
+    return status === 'paid'
+      ? '<a class="btn btn-primary btn-lg btn-block" href="/shop/">Continue shopping</a>'
+      : '<a class="btn btn-outline btn-lg btn-block" href="/cart/">Back to cart</a>';
+  }
   const sep = returnUrl.includes('?') ? '&' : '?';
   const href = `${returnUrl}${sep}status=${status}${details ? `&order=${encodeURIComponent(details.orderNumber)}` : ''}`;
   return `<a class="btn btn-primary btn-lg btn-block" href="${esc(href)}" id="back">Back to the app</a>`;
@@ -31,6 +37,8 @@ function show(html) {
 }
 
 function showPaid(orderNumber) {
+  // Paid from the website's own checkout: the basket in this browser is done with.
+  if (!returnUrl) cart.clear();
   show(`<div class="pay-icon ok" aria-hidden="true">✓</div>
     <h1>Payment received</h1>
     <p class="muted">Order #${esc(orderNumber)} is confirmed. We'll deliver it on your chosen day.</p>

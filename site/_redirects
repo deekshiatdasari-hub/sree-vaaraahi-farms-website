@@ -7,7 +7,7 @@
 /product-category/* /shop/ 301
 /product/:slug/ /shop/?q=:slug 302
 /my-account/* /cart/ 302
-/checkout/* /cart/ 302
+/checkout/order-received/* /shop/ 302
 /clove-beans-a-nutritious-and-delicious-addition-to-your-diet/ /knowledge-hub/clove-beans-a-nutritious-and-delicious-addition-to-your-diet/ 301
 /benefits-of-consuming-lemon-every-day/ /knowledge-hub/benefits-of-consuming-lemon-every-day/ 301
 /benefits-of-consuming-custard-apple-a-nutritional-powerhouse/ /knowledge-hub/benefits-of-consuming-custard-apple-a-nutritional-powerhouse/ 301

@@ -12,9 +12,11 @@ const FRESH_MS = 2 * 60 * 1000;
 const STALE_LIMIT_MS = 24 * 60 * 60 * 1000;
 
 export class ApiError extends Error {
-  constructor(message, status) {
+  constructor(message, status, data = null) {
     super(message);
     this.status = status;
+    /** The server's full reply, e.g. { error: "stock", items: [...] } for sold-out items. */
+    this.data = data;
   }
 }
 
@@ -29,7 +31,7 @@ async function request(path, { method = 'GET', body, headers = {}, timeoutMs = 2
       signal: controller.signal,
     });
     const data = await res.json().catch(() => null);
-    if (!res.ok) throw new ApiError(data?.message ?? 'Something went wrong. Please try again.', res.status);
+    if (!res.ok) throw new ApiError(data?.message ?? 'Something went wrong. Please try again.', res.status, data);
     return data;
   } catch (error) {
     if (error instanceof ApiError) throw error;
@@ -53,6 +55,42 @@ function writeCache(catalog) {
     localStorage.setItem(CACHE_KEY, JSON.stringify(catalog));
   } catch {
     // Storage full or blocked: the site still works, just without the cache.
+  }
+}
+
+const PAYMENTS_KEY = 'svf.payments.v1';
+
+/**
+ * True when the server takes online payments (Razorpay), so the cart offers checkout;
+ * false means WhatsApp ordering. Remembered for a few minutes per browser tab.
+ */
+export async function paymentsOpen() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(PAYMENTS_KEY));
+    if (saved && Date.now() - saved.at < 5 * 60 * 1000) return saved.open;
+  } catch {
+    // No saved answer; ask the server.
+  }
+  try {
+    const health = await request('/health', { timeoutMs: 6000 });
+    const open = health?.payments === 'razorpay';
+    try {
+      sessionStorage.setItem(PAYMENTS_KEY, JSON.stringify({ at: Date.now(), open }));
+    } catch {
+      // Storage blocked: ask again next time.
+    }
+    return open;
+  } catch {
+    return false;
+  }
+}
+
+/** Forgets the cached catalog, e.g. after the server reports that items sold out. */
+export function clearCatalogCache() {
+  try {
+    localStorage.removeItem(CACHE_KEY);
+  } catch {
+    // Nothing cached.
   }
 }
 

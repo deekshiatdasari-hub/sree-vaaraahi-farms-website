@@ -3,7 +3,7 @@
   "private": true,
   "description": "www.sreevaaraahifarms.in: plain HTML, CSS and JavaScript. Products and orders come from WooCommerce through the shop server.",
   "scripts": {
-    "preview": "python -m http.server 5500 --directory site",
+    "preview": "node tools/preview.mjs",
     "sync": "node tools/sync-partials.mjs",
     "policies": "node tools/build-policies.mjs && node tools/sync-partials.mjs",
     "site-files": "node tools/build-site-files.mjs"

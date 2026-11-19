@@ -27,9 +27,9 @@ const rules = [
   ['/product-category/*', '/shop/', 301],
   // Old WooCommerce product pages, e.g. /product/wild-honey/ → a shop search for "wild honey".
   ['/product/:slug/', '/shop/?q=:slug', 302],
-  // Account and checkout pages come back with online payment; until then, the cart.
+  // The old WooCommerce account and order-received pages. /checkout/ itself is the new checkout.
   ['/my-account/*', '/cart/', 302],
-  ['/checkout/*', '/cart/', 302],
+  ['/checkout/order-received/*', '/shop/', 302],
 ];
 
 const articleFile = join(here, 'article-redirects.json');
@@ -93,5 +93,5 @@ console.log(`sitemap.xml: ${urls.length} pages`);
 
 /* ---------- robots.txt ---------- */
 
-writeFileSync(join(site, 'robots.txt'), `User-agent: *\nDisallow: /cart/\nDisallow: /pay/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+writeFileSync(join(site, 'robots.txt'), `User-agent: *\nDisallow: /cart/\nDisallow: /checkout/\nDisallow: /pay/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log('robots.txt written');

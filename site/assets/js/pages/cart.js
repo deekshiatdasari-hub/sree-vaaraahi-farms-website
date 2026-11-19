@@ -1,6 +1,6 @@
-import { loadCatalog } from '../api.js';
+import { loadCatalog, paymentsOpen } from '../api.js';
 import { cart, resolveCart } from '../cart.js';
-import { Business, CHECKOUT_MODE, Delivery } from '../config.js';
+import { Business, Delivery } from '../config.js';
 import {
   esc,
   formatDeliveryDate,
@@ -17,6 +17,11 @@ const days = getDeliveryOptions();
 let products = null;
 let chosenDay = days[0]?.date ?? '';
 let pincode = '';
+/** null while asking the server; then true (online checkout) or false (WhatsApp). */
+let online = null;
+
+const checkoutHref = () =>
+  `/checkout/?day=${encodeURIComponent(chosenDay)}${pincode.length === 6 ? `&pin=${pincode}` : ''}`;
 
 function pincodeMessage() {
   if (!pincode) return '';
@@ -89,10 +94,15 @@ function render() {
     : '<span>Rapido fare, paid to the rider</span>';
   const blocked = summary.hasProblems || summary.subtotal === 0;
 
+  const off = blocked ? 'aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.5"' : '';
+  const whatsappHref = blocked ? '#' : esc(whatsappLink(summary));
   const action =
-    CHECKOUT_MODE === 'online'
-      ? `<a class="btn btn-primary btn-lg btn-block" href="/checkout/" ${blocked ? 'aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.5"' : ''}>Proceed to checkout</a>`
-      : `<a class="btn btn-whatsapp btn-lg btn-block" id="send" href="${blocked ? '#' : esc(whatsappLink(summary))}" target="_blank" rel="noopener" ${blocked ? 'aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.5"' : ''}>
+    online === null
+      ? '<div class="skeleton" style="height:52px;border-radius:999px" aria-hidden="true"></div>'
+      : online
+        ? `<a class="btn btn-primary btn-lg btn-block" id="checkout" href="${blocked ? '#' : esc(checkoutHref())}" ${off}>Checkout · ${formatPrice(summary.subtotal)}</a>
+          <p class="note" style="margin:10px 0 0;text-align:center">Pay securely by UPI, card or net banking. <a id="send" href="${whatsappHref}" target="_blank" rel="noopener">Or order on WhatsApp</a></p>`
+        : `<a class="btn btn-whatsapp btn-lg btn-block" id="send" href="${whatsappHref}" target="_blank" rel="noopener" ${off}>
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
           Send order on WhatsApp</a>
         <p class="note" style="margin:10px 0 0">WhatsApp opens with your order filled in. Add your name and address, then send. We'll confirm your order and share payment details.</p>`;
@@ -156,8 +166,10 @@ root.addEventListener('input', (event) => {
   pincode = event.target.value;
   document.getElementById('pincode-msg').innerHTML = pincode.length === 6 ? pincodeMessage() : '';
   const send = document.getElementById('send');
+  const checkout = document.getElementById('checkout');
   const summary = resolveCart(products);
   if (send && !summary.hasProblems) send.href = whatsappLink(summary);
+  if (checkout && !summary.hasProblems) checkout.href = checkoutHref();
 });
 
 // Quantities change through the shared − / + buttons; redraw totals afterwards.
@@ -170,6 +182,11 @@ document.addEventListener('cart:change', () => {
     const control = root.querySelector(`.buy-control[data-p="${CSS.escape(focusedId)}"]`);
     (control?.querySelector(`[data-${which}]:not([disabled])`) ?? control?.querySelector('button'))?.focus();
   }
+});
+
+paymentsOpen().then((open) => {
+  online = open;
+  if (products) render();
 });
 
 loadCatalog((catalog) => {

@@ -2,27 +2,24 @@
  * Website settings. Business rules match the app (src/constants/config.ts) and the server.
  */
 
-/** The live shop server (catalog only until Razorpay is live). */
+/** The live shop server. */
 const PRODUCTION_API = 'https://sree-vaaraahi-farms-api.sree-vaaraahi-farms-server.workers.dev';
-/** The test server: used by local previews (localhost) and any other address. */
+/** The test server (Razorpay test keys, no real money): local previews and the pages.dev address. */
 export const STAGING_API = 'https://sree-vaaraahi-farms-api-staging.sree-vaaraahi-farms-server.workers.dev';
 
 /** Which server each address uses. Each of these must be in ALLOWED_ORIGINS on that server. */
 const API_BY_HOST = {
   'www.sreevaaraahifarms.in': PRODUCTION_API,
   'sreevaaraahifarms.in': PRODUCTION_API,
-  'sree-vaaraahi-farms.pages.dev': PRODUCTION_API,
-  'sree-vaaraahi-farms-website.pages.dev': PRODUCTION_API,
 };
 
 export const API_URL = API_BY_HOST[location.hostname] ?? STAGING_API;
 
-/**
- * How the cart is finished:
- * - 'whatsapp': the cart becomes a WhatsApp message to the shop (until online payment is live).
- * - 'online':   login, address and Razorpay payment on /checkout/.
+/*
+ * Checkout: the cart offers online payment (Razorpay, /checkout/) whenever the server takes
+ * payments, and ordering on WhatsApp otherwise. So the live site switches by itself once the
+ * live server is moved to PAYMENTS_MODE = "razorpay".
  */
-export const CHECKOUT_MODE = 'whatsapp';
 
 export const Business = {
   name: 'Sree Vaaraahi Farms',

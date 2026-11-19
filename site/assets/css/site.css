@@ -2159,3 +2159,35 @@ body.has-cart-bar {
   width: 16px;
   height: 16px;
 }
+
+/* ---------- Checkout form ---------- */
+
+.form-grid {
+  display: grid;
+  gap: 0 14px;
+}
+
+@media (min-width: 600px) {
+  .form-grid.two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field input[readonly] {
+  background: #f2f1ec;
+  color: var(--muted);
+}
+
+.error-box {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--danger-50);
+  color: var(--danger);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.error-box a {
+  color: var(--danger);
+}

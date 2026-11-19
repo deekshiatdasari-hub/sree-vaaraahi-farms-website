@@ -25,7 +25,7 @@ WordPress/WooCommerce stays as the back office. The owner manages products, pric
 npm run preview
 ```
 
-Then open http://localhost:5500. The site uses the staging shop server, which accepts requests from `http://localhost:5500`. That setting is `ALLOWED_ORIGINS` in the app project's `server/wrangler.toml`.
+Then open http://localhost:5500. The preview turns browser caching off, so edits show on a normal reload. The site uses the staging shop server, which accepts requests from `http://localhost:5500`. That setting is `ALLOWED_ORIGINS` in the app project's `server/wrangler.toml`.
 
 ## Making changes
 
@@ -34,9 +34,16 @@ Then open http://localhost:5500. The site uses the staging shop server, which ac
 - **New page:** copy an information page and keep its `<!-- partial:… -->` markers. Then run `npm run sync` and `npm run site-files` to update the sitemap.
 - **Products and prices:** change them in WooCommerce. The site picks them up within a few minutes.
 
-## Ordering today
+## Ordering
 
-`CHECKOUT_MODE = 'whatsapp'` in `site/assets/js/config.js`. The cart becomes a pre-filled WhatsApp message to +91 76718 25610 with the delivery day and pincode. The app already pays online through this site's payment page, `/pay/` (Razorpay Checkout). Online checkout on the website itself is the next step, and needs login on the website.
+The cart asks the shop server whether it takes online payments (`/health`):
+
+- **Yes** (`PAYMENTS_MODE = "razorpay"`): **Checkout** opens `/checkout/`, a guest checkout (name, mobile, optional email, address, delivery day). The order is created on the server and paid on `/pay/` with Razorpay Checkout. WhatsApp ordering stays available as a link.
+- **No** (catalog-only or unreachable): the cart becomes a pre-filled WhatsApp message to +91 76718 25610.
+
+So the live site switches to online payment by itself once the live server is moved to Razorpay. Local previews and the `pages.dev` address use the test server (Razorpay test keys, no real money); only `www.sreevaaraahifarms.in` uses the live server.
+
+The app pays through the same `/pay/` page, opened in a browser tab.
 
 ## Deploy (Cloudflare Pages, from GitHub)
 

@@ -3,8 +3,10 @@
   "configurations": [
     {
       "name": "website",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "5500", "--directory", "site"],
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/preview.mjs"
+      ],
       "port": 5500
     }
   ]
