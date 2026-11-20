@@ -13,6 +13,7 @@ This page applies to the **Sree Vaaraahi Farms** app, published by Sree Vaaraahi
 ### What we keep, and for how long
 
 - **Order and payment records** (items, amounts, dates, transaction IDs): kept for as long as tax and accounting laws require (generally up to 8 years), then deleted.
+- **App crash reports** (phone model, app version, what went wrong): deleted automatically within 90 days.
 - **Orders that are on their way:** still delivered. Cancellation and refund rules apply as usual.
 
 Questions? Contact us at hello@sreevaaraahifarms.in.

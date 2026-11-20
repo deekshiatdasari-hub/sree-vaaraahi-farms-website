@@ -20,7 +20,7 @@ These terms apply whenever you browse or order from Sree Vaaraahi Farms, on our 
 
 ### 1. Who we are
 
-Sree Vaaraahi Farms ("we", "us") is a store run by Bhavani, who sells and delivers every order placed on our website and app. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064), which also publishes our app. Our address is 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
+Sree Vaaraahi Farms ("we", "us") is a store run by Bhavani, who sells and delivers every order placed on our website and app. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP, a limited liability partnership registered under the Limited Liability Partnership Act, 2008 (LLPIN: ACJ-9064), which also publishes our app. Our address is E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076. We sell naturally grown fruits, vegetables, leafy greens, cold-pressed oils, dairy products and groceries, sourced from the forest regions of Araku, Chintapalli and Paderu in Andhra Pradesh and from partner farms.
 
 ### 2. Who can order
 
@@ -82,7 +82,7 @@ If you have a complaint, please contact our Grievance Officer:
 - **Name:** Bhavani
 - **Phone:** +91 76718 25610
 - **Email:** hello@sreevaaraahifarms.in
-- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+- **Address:** E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076
 
 We acknowledge complaints within 48 hours and aim to resolve them within one month.
 ----- END -----
@@ -98,7 +98,7 @@ This policy explains what personal information Sree Vaaraahi Farms collects thro
 
 ### 1. Who is responsible for your data
 
-Bhavani, who runs the Sree Vaaraahi Farms store, is responsible for the personal information collected for your orders. Address: 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319. Email: hello@sreevaaraahifarms.in. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), which publishes the Sree Vaaraahi Farms app.
+Bhavani, who runs the Sree Vaaraahi Farms store, is responsible for the personal information collected for your orders. Address: E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076. Email: hello@sreevaaraahifarms.in. The Sree Vaaraahi Farms brand belongs to Sree Vaaraahi Farms LLP (LLPIN: ACJ-9064), which publishes the Sree Vaaraahi Farms app.
 
 ### 2. What we collect
 
@@ -110,6 +110,7 @@ Bhavani, who runs the Sree Vaaraahi Farms store, is responsible for the personal
 | Order details: items, amounts, delivery day, notes | To fulfil your order, provide order history and "Buy again", and keep the records the law requires |
 | Payment status and transaction ID | To confirm your payment and process refunds. We never see your card, UPI PIN or bank login. |
 | Messages you send us (WhatsApp, Telegram, email, phone) | To answer questions and resolve complaints |
+| Crash reports from the app: phone model, Android version, app version, what went wrong, and your account ID | To find and fix problems in the app |
 
 The app does **not** access your contacts, photos, camera or precise location. It contains no advertising and does not track you across other apps or websites.
 
@@ -118,8 +119,9 @@ The app does **not** access your contacts, photos, camera or precise location. I
 We share information only with the service providers needed to run the business, and only as much as each one needs:
 
 - **Razorpay**: processes your payment.
-- **Google Firebase**: Google sign-in and email login.
+- **Google Firebase**: Google sign-in and email login, and crash reports from the app (Firebase Crashlytics). Crash reports don't include your name, address or payment details.
 - **Our website and store host (GoDaddy) and the WooCommerce software**: store your account and order records.
+- **Cloudflare**: runs the server behind our app and website, and stores the name, mobile number and saved addresses of app accounts so they are there when you log in again.
 - **Delivery riders (for example, Rapido)**: receive your name, phone number and address to deliver the order.
 - **Government authorities**: only when the law requires it.
 
@@ -133,6 +135,7 @@ Our website uses essential cookies to keep your cart and login working. We do no
 
 - **Account details and saved addresses:** kept until you delete your account.
 - **Order and payment records:** kept for as long as tax and accounting laws require (generally up to 8 years), even after account deletion.
+- **Crash reports from the app:** deleted automatically after 90 days.
 
 ### 6. Your rights
 
@@ -162,7 +165,7 @@ If we change how we use your data, we will update this page and the date at the 
 - **Name:** Bhavani
 - **Phone:** +91 76718 25610
 - **Email:** hello@sreevaaraahifarms.in
-- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+- **Address:** E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076
 ----- END -----
 
 ========================================================================
@@ -263,7 +266,7 @@ We're happy to help with orders, deliveries and anything else.
 - **WhatsApp / Phone:** +91 76718 25610
 - **Email:** hello@sreevaaraahifarms.in
 - **Hours:** 9 AM – 6 PM
-- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+- **Address:** E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076
 
 **Order help:** please include your order number. To cancel an order, contact us before 8 PM the day before your delivery day. To report a problem, contact us within 4 hours of delivery.
 
@@ -306,6 +309,7 @@ This page applies to the **Sree Vaaraahi Farms** app, published by Sree Vaaraahi
 ### What we keep, and for how long
 
 - **Order and payment records** (items, amounts, dates, transaction IDs): kept for as long as tax and accounting laws require (generally up to 8 years), then deleted.
+- **App crash reports** (phone model, app version, what went wrong): deleted automatically within 90 days.
 - **Orders that are on their way:** still delivered. Cancellation and refund rules apply as usual.
 
 Questions? Contact us at hello@sreevaaraahifarms.in.
@@ -342,5 +346,5 @@ Sree Vaaraahi Farms was founded by Prakash Sunkara. Read his story on our [About
 
 - **WhatsApp / Phone:** +91 76718 25610
 - **Email:** hello@sreevaaraahifarms.in
-- **Address:** 129, Sri Mytri Villas, Patancheru, Hyderabad, Telangana 502319
+- **Address:** E Block, 106, Raheja Vistas, Nacharam, Hyderabad, Telangana 500076
 ----- END -----

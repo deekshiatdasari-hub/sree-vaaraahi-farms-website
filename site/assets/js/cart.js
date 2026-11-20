@@ -59,6 +59,22 @@ export const cart = {
     lines = [];
     save();
   },
+
+  /**
+   * Drops lines for products or pack sizes the shop no longer has (deleted or unpublished in
+   * WooCommerce), which would otherwise count in the header and cart bar while the cart page
+   * can't show them. Sold-out items stay: the catalog still lists them. Call it with a fresh
+   * catalog from the server only.
+   */
+  prune(products) {
+    // An empty catalog means the shop didn't answer properly, not that everything was deleted.
+    if (!products?.length) return;
+    const byId = new Map(products.map((p) => [p.id, p]));
+    const kept = lines.filter((l) => byId.get(l.productId)?.variants.some((v) => v.id === l.variantId));
+    if (kept.length === lines.length) return;
+    lines = kept;
+    save();
+  },
 };
 
 /**

@@ -6,6 +6,7 @@
     "preview": "node tools/preview.mjs",
     "sync": "node tools/sync-partials.mjs",
     "policies": "node tools/build-policies.mjs && node tools/sync-partials.mjs",
-    "site-files": "node tools/build-site-files.mjs"
+    "site-files": "node tools/build-site-files.mjs",
+    "cpanel": "node tools/build-site-files.mjs && node tools/build-cpanel.mjs"
   }
 }

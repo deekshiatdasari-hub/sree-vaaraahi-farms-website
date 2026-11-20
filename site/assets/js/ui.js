@@ -46,7 +46,9 @@ function initHeader() {
 /* ---------- Cart count & floating cart bar ---------- */
 
 function updateCartIndicators() {
-  const count = cart.count();
+  const products = cachedCatalog()?.products;
+  // With a catalog, count only items the shop still has (as the cart page does).
+  const count = products ? resolveCart(products).items.reduce((n, i) => n + i.qty, 0) : cart.count();
   for (const badge of document.querySelectorAll('.cart-count')) {
     badge.textContent = String(count);
     badge.hidden = count === 0;
@@ -57,7 +59,6 @@ function updateCartIndicators() {
 
   const bar = document.querySelector('.cart-bar');
   if (!bar) return;
-  const products = cachedCatalog()?.products;
   const show = count > 0 && Boolean(products) && !document.body.hasAttribute('data-no-cart-bar');
   bar.classList.toggle('show', show);
   document.body.classList.toggle('has-cart-bar', show);
@@ -200,4 +201,8 @@ document.addEventListener('cart:change', () => {
   refreshBuyControls();
   updateCartIndicators();
 });
-document.addEventListener('catalog:loaded', updateCartIndicators);
+// A fresh catalog from the server: forget cart lines for products the shop no longer has.
+document.addEventListener('catalog:loaded', () => {
+  cart.prune(cachedCatalog()?.products);
+  updateCartIndicators();
+});
